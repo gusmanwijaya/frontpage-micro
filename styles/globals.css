@@ -19,7 +19,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 515px;
-  height: 90%;
+  height: 85%;
   opacity: 0.8;
   clip-path: polygon(46% 0%, 82% 0%, 67% 100%, 0% 100%);
   background: transparent linear-gradient(130.09deg, #3d47bd 0%, #2e37a4 50.8%);

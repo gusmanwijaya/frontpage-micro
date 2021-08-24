@@ -12,6 +12,8 @@ import ListCourses from "src/parts/ListCourses";
 import ListCategories from "src/parts/ListCategories";
 import Footer from "src/parts/Footer";
 
+import courses from "src/constants/api/courses";
+
 function Home({ data }) {
   return (
     <>
@@ -25,7 +27,7 @@ function Home({ data }) {
         <section className="header-clipping pt-10 min-h-screen md:min-h-0">
           <div className="sunshine max-w-full"></div>
           <Circle className="absolute left-0 bottom-0"></Circle>
-          <div className="container mx-auto px-16">
+          <div className="container mx-auto">
             <Header></Header>
             <Hero></Hero>
           </div>
@@ -53,8 +55,8 @@ function Home({ data }) {
 
 Home.getInitialProps = async () => {
   try {
-    const data = await axios.get(`/courses`);
-    return { data: data.data.data };
+    const data = await courses.all();
+    return { data: data.data };
   } catch (error) {
     return error;
   }

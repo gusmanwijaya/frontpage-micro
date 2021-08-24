@@ -10,7 +10,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center px-16">
       <div className="w-1/2">
         <h1 className="text-5xl text-white mb-5 font-semibold leading-tight">
           <span className="text-teal-400">The New</span> Way to

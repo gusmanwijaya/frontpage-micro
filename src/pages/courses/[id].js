@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from "react";
 import Footer from "src/parts/Footer";
 import CoursePhoto from "src/parts/Details/CoursePhoto";
 import RenderPreview from "src/parts/Details/RenderPreview";
+import HappyStudent from "src/parts/Details/HappyStudent";
 
 function DetailsCourse({ data }) {
   const footer = useRef(null);
@@ -182,13 +183,13 @@ function DetailsCourse({ data }) {
               )}
             </section>
 
-            <section className="mt-10">
+            <section className="mt-10 w-2/3">
               <h6 className="font-medium text-gray-900 text-2xl mb-4">
                 Our <span className="text-teal-500">Instructor</span>
               </h6>
               <div className="flex items-center">
                 <img
-                  className="w-20 rounded-full overflow-hidden object-cover"
+                  className="w-20 h-20 rounded-full overflow-hidden object-cover"
                   src={data?.mentor?.profile ?? ""}
                   alt={data?.mentor?.name}
                 />
@@ -201,6 +202,17 @@ function DetailsCourse({ data }) {
                   </h3>
                 </div>
               </div>
+            </section>
+
+            <section className="mt-10 w-6/12">
+              <h6 className="font-medium text-gray-900 text-2xl mb-4">
+                Happy <span className="text-teal-500">Students</span>
+              </h6>
+              {data.reviews?.map?.((testimonial, index) => {
+                return (
+                  <HappyStudent key={index} data={testimonial}></HappyStudent>
+                );
+              })}
             </section>
           </div>
         </div>

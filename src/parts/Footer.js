@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   function submit() {}
   return (
-    <footer className="container mx-auto">
+    <footer className="container mx-auto px-4">
       <div className="flex justify-between">
         <div className="w-1/6">
           <h6 className="text-white">Company</h6>

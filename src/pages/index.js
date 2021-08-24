@@ -21,7 +21,7 @@ function Home({ data }) {
         <section className="header-clipping pt-10 min-h-screen md:min-h-0">
           <div className="sunshine max-w-full"></div>
           <Circle className="absolute left-0 bottom-0"></Circle>
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <Header></Header>
             <Hero></Hero>
           </div>
@@ -39,7 +39,7 @@ function Home({ data }) {
           <ListCategories></ListCategories>
         </section>
 
-        <section className="px-4 mt-24 bg-indigo-1000 py-12">
+        <section className="mt-24 bg-indigo-1000 py-12">
           <Footer></Footer>
         </section>
       </main>

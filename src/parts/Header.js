@@ -18,7 +18,7 @@ export default function Header({ onLight }) {
   const textCTA = router.pathname.indexOf("/login") > -1 ? "Daftar" : "Masuk";
 
   return (
-    <header className="flex justify-between items-center">
+    <header className="flex justify-between items-center px-4">
       <div style={{ height: 54 }}>
         <Logo className="on-dark"></Logo>
       </div>

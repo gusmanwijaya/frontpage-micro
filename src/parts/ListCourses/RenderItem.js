@@ -16,7 +16,7 @@ export default function RenderItem({ item }) {
           />
         </figure>
         <div className="item-meta mt-2">
-          <h4 className="text-lg text-gray-900">
+          <h4 className="text-lg text-gray-900 truncate">
             {item?.name ?? "Course name"}
           </h4>
           <h5 className="text-sm text-gray-600">

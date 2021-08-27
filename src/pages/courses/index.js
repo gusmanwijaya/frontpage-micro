@@ -148,7 +148,7 @@ function Courses({ data }) {
           </div>
         </div>
 
-        <div className="container mx-auto z-10 relative">
+        <div className="container px-4 mx-auto z-10 relative">
           <Header></Header>
         </div>
       </section>

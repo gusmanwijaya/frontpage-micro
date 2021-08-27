@@ -4,7 +4,7 @@ import { ToastContainer } from "react-toastify";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 
-import "../../styles/globals.css";
+import "styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
 
 NProgress.configure({ showSpinner: false });

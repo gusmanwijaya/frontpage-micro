@@ -87,7 +87,7 @@ export default function Header({ onLight }) {
           {User ? (
             <a
               target="_blank"
-              rel="noopener noereferrer"
+              rel="noopener noreferrer"
               href={linkCTA}
               className="hover:bg-indigo-800 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium ml-6 inline-flex items-center"
             >
@@ -107,7 +107,7 @@ export default function Header({ onLight }) {
           ) : (
             <a
               target="_blank"
-              rel="noopener noereferrer"
+              rel="noopener noreferrer"
               href={linkCTA}
               className="bg-indigo-700 hover:bg-indigo-800 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium ml-6"
             >
